@@ -12,10 +12,10 @@ namespace DataConverter
             //listWriter();
         }
 
-        //process the raw data and turn it into an uderstandable output.
+        //process the raw data and turn it into an understandable output.
 
-        //takes facility code and location of text file containing the location data
-        public static string locationGiver(string internalFacilityCode, string file)
+        //takes facility code and location of the text file containing the location data
+        public static string locationGiver(string internalFacilityCode, string file)//internal facility code of track and trace output and file location of un code-list database
         {
             // Store the path of the textfile in your system
 
@@ -27,7 +27,7 @@ namespace DataConverter
             // To read a text file line by line
             if (File.Exists(file))
             {
-                // Store each line in array of strings
+                // Store each line in an array of strings
                 string[] lines = File.ReadAllLines(file);
 
                 foreach (string ln in lines)
@@ -42,12 +42,12 @@ namespace DataConverter
                 }
 
             }
-            string file2 = @"F:\\documents\\movetech\\packageCodes.txt";
+            string file2 = @"F:\\documents\\movetech\\packageCodes.txt";//change it to the location of the txt file in your computer.
             //package data 
             // To read a text file line by line
             if (File.Exists(file2))
             {
-                // Store each line in array of strings
+                // Store each line in an array of strings
                 string[] lines = File.ReadAllLines(file2);
 
                 foreach (string ln in lines)
